@@ -206,7 +206,7 @@ module.exports.forgotPassword = async (req, res) => {
       },
     });
     const mailGenerator = new Mailgen({
-      theme: "cerberus",
+      theme: "default",
       product: {
         // .......................Appears in header & footer of e-mails......................//
         name: "Registration-Login System",
