@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <%- include ('./_header') -%>
+    <div class="head"><h1>Registration-Login System</h1></div>
+
+    <div class="signup-form">
+      <div class="container">
+        <div class="header">
+          <h1>Sign In</h1>
+        </div>
+
+        <form action="" method="post">
+          <div class="input">
+            <i class="fa-solid fa-envelope"></i>
+            <!-- Form Input code -->
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <input class="signup-btn" type="submit" value="SIGN IN" />
+        </form>
+      </div>
+      <br />
+      <p>
+        You don't have an account?&nbsp; <a href="/register"> Register Now!</a>
+      </p>
+      <br />
+      <p>
+        Forgot Password?&nbsp;
+        <a href="/forgotPassword">Forgot Password!</a>
+      </p>
+    </div>
+    <%- include ("./message") %>
+  </body>
+</html>

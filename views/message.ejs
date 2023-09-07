@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+  
+    <script>
+      <% if(flash.success && flash.success.length > 0 ){ %>
+        new Noty({
+          theme: 'metroui',
+          type: 'success',
+          layout: 'topRight',
+          text: '<%= flash.success %>',
+          timeout: 3000
+          }).show();
+        
+        <% } %>
+
+        <% if(flash.error && flash.error.length > 0 ){ %>
+        new Noty({
+          theme: 'metroui',
+          type: 'error',
+          layout: 'topRight',
+          text: '<%= flash.error %>',
+          timeout: 3000
+          }).show();
+        
+        <% } %>
+    </script>
+
+<!-- <script>
+
+if (typeof errors !== 'undefined') {
+  errors.forEach(function (error) {
+    new Noty({
+      type: 'warning',
+      text: error.msg,
+      timeout: 5000,
+      closeWith: ['button'],
+    }).show();
+  });
+}
+
+if (success_msg !== 'undefined') {
+  new Noty({
+    type: 'success',
+    text: success_msg,
+    timeout: 5000,
+    closeWith: ['button'],
+  }).show();
+}
+
+if (error_msg !== '') {
+  new Noty({
+    type: 'error',
+    text: error_msg,
+    timeout: 5000,
+    closeWith: ['button'],
+  }).show();
+}
+
+if (error !== '') {
+  new Noty({
+    type: 'error',
+    text: error,
+    timeout: 5000,
+    closeWith: ['button'],
+  }).show();
+}
+</script> -->

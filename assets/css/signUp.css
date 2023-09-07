@@ -1,0 +1,129 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline-color: #a5b4fc;
+}
+
+body {
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  background-color: #70b3f1;
+}
+.head h1 {
+  margin-top: 3.4rem;
+  color: rgb(3, 70, 255);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 14px;
+  color: #114761;
+}
+/* .message {
+  font-size: 14px;
+  text-align: left;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 5px 20px;
+  color: #ffffff;
+} */
+.signup-form {
+  width: 480px;
+  margin-top: 30px;
+  padding: 50px;
+  border-radius: 8px;
+  background-color: #fdfdff2d;
+  box-shadow: 2px 4px 100px #6b728040;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.header h1 {
+  font-weight: bolder;
+  font-size: 24px;
+  color: #0e5925;
+}
+
+.input {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.input input {
+  width: 100%;
+  border: none;
+  padding: 8px 40px;
+  border-radius: 4px;
+  background-color: #ffffff8d;
+  color: #1f252e;
+  font-size: 16px;
+}
+
+.input input::placeholder {
+  color: #8a8989;
+}
+
+.input i {
+  top: 50%;
+  width: 36px;
+  position: absolute;
+  transform: translateY(-50%);
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.signup-btn {
+  width: 100%;
+  border: none;
+  padding: 8px 0;
+  margin: 15px 0;
+  border-radius: 4px;
+  background-color: #6366f1;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-btn:active {
+  background-color: #28d731;
+  transition: all 0.3s ease;
+}
+
+.social-icons i {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  margin: 24px 8px 48px 8px;
+  background-color: rgb(255, 251, 251);
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+i.fa-facebook-f {
+  background-color: #3b5998;
+}
+
+i.fa-twitter {
+  background-color: #1da1f2;
+}
+
+i.fa-google {
+  background-color: #cd5002;
+}
+
+a {
+  color: #0f13fc;
+  text-decoration: none;
+  font-weight: 600;
+}
