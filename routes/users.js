@@ -50,7 +50,7 @@ router.get(
 // .................Facebook authentication route........................//
 router.get("/facebook", passport.authenticate("facebook"));
 router.get(
-  "/facebook/login",
+  "/facebook/logins",
   passport.authenticate("facebook", {
     successRedirect: "/home",
     failureRedirect: "/register",
