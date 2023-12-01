@@ -297,6 +297,7 @@ module.exports.logout = async (req, res) => {
   // Clear the JWT token cookie
   res.clearCookie("token");
   res.clearCookie("jwt");
+  console.log("jwt");
   try {
     req.logout((err) => {
       if (err) {
